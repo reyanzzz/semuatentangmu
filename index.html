@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manusia Pengagum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #001858;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .love-rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .heart {
+      position: absolute;
+      color: #ff6b81;
+      font-size: 20px;
+      animation: fall 5s linear infinite;
+      opacity: 0.8;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-10%); opacity: 0.8; }
+      100% { transform: translateY(110vh); opacity: 0; }
+    }
+    .book-cover {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 25px;
+      background-color: rgba(245, 130, 174, 0.9);
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease forwards;
+      position: relative;
+      z-index: 1;
+    }
+    .book-cover h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+    }
+    .book-cover h2 {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+    .quotes {
+      max-width: 700px;
+      line-height: 1.6;
+      min-height: 120px;
+      position: relative;
+      z-index: 1;
+    }
+    .quotes p {
+      background: rgba(255, 255, 255, 0.9);
+      border-left: 4px solid #8bd3dd;
+      padding: 14px 24px;
+      margin: 0;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+      display: none;
+    }
+    .quotes p.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      background: #f582ae;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+    button:hover { background: #ff9ebc; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .credit {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      font-size: 13px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 1px;
+      z-index: 2;
+      backdrop-filter: blur(3px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+    }
+    .credit:hover { background: rgba(0, 0, 0, 0.6); transform: scale(1.05); }
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="41d7a571adff8287cd39220b04c42169.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="love-rain"></div>
+  <div class="book-cover">
+    <h1>3726mdpl</h1>
+    <h2>About You</h2>
+  </div>
+  <div class="quotes">
+    <p>"jatuh cinta padamu adalah ketidak sengajaan yang jauh lebih indah dari ribuan hal yang pernah aku rencanakan"</p>
+    <p>"meskipun tidak sempat memilikinya, terimakasih atas bahagianya" - 3726mdpl</p>
+    <p>"cinta ga selalu tentang memiliki, bisa saja hanya mengagumi" - 3726mdpl</p>
+    <p>"selain mengagumi alam, di dunia ini juga terdapat manusia yang dapat dikagumi tapi tidak bisa dimiliki" - 3726mdpl</p>
+    <p>"di perjalanan yang panjang ini, jangan jadi milik siapa pun dulu, ya?" - 3726mdpl</p>
+    <p>"bahkan di bumi yang sangat luas ini, bagian paling menyenangkan adalah bertemu denganmu" - 3726mdpl</p>
+    <p>"jika hidup adalah sebuah buku, maka bertemu denganmu adalah bab favoritku." - 3726mdpl</p>
+    <p>"terkesan sama, tapi kata mengagumi jauh lebih tabah. setabah dengan siapapun dia, bahagia diri sendiri akan ikut serta selalu" -3726mdpl</p>
+    <p>"tatapan itu secara tidak sengaja memberikan perasaan yang amat panjang ini" -3726mdpl</p>
+    <p>"terimakasih karena telah menjadi orang yang pernah aku kagumi, meskipun akhirnya aku harus melupakanmu." 3726mdpl</p>
+    <p>"Sedikit tidak nyaman dan merasa kalah, tapi manusia dalam hidup memang punya hal hal yang datang dan pergi kan? "Tentangmu Yang Selalu Abadi Dalam Karya Seni Milik-ku"</p>
+  </div>
+  <div class="credit">created by R</div>
+
+  <audio id="bg-audio" controls style="position: fixed; bottom: 60px; right: 20px; z-index: 2;">
+    <source src="The 1975 - About You (Official).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const quotes = Array.from(document.querySelectorAll(".quotes p"));
+      let current = -1;
+      function showNextQuote() {
+        if (current >= 0) {
+          quotes[current].classList.remove("show");
+        }
+        current = (current + 1) % quotes.length;
+        quotes[current].classList.add("show");
+      }
+      const button = document.createElement("button");
+      button.textContent = "Lanjut";
+      button.addEventListener("click", showNextQuote);
+      document.querySelector(".quotes").after(button);
+      showNextQuote();
+    });
+    const loveRain = document.querySelector(".love-rain");
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.textContent = "❤";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (Math.random() * 10 + 10) + "px";
+      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      loveRain.appendChild(heart);
+      setTimeout(() => { heart.remove(); }, 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
